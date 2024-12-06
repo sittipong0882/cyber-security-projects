@@ -9,5 +9,5 @@
 ## Wattana Natanjai 
 ### 6602041520225
 
-## Jeernan Keawsanchai
+## Jeeranan Keawsanchai
 ### 6602041520039
