@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Booking {
+  id          String   @id @default(uuid())
+  title       String
+  description String
+  start       DateTime
+  end         DateTime
+  userEmail   String
+  idCard      String?  // เพิ่มฟิลด์ idCard ที่สามารถเก็บรหัสบัตรประชาชน
+  createdAt   DateTime @default(now())
+}
