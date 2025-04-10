@@ -1,0 +1,2 @@
+ALTER TABLE "Booking"
+ADD COLUMN "idCard" TEXT NULL;

@@ -1,0 +1,185 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Card styles */
+.card-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+.form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Button styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+thead {
+    background: linear-gradient(to right, #4CAF50, #81C784); /* สีเขียวสำหรับหัวตาราง */
+    color: white;
+}
+
+th, td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #e8f5e9; /* สีพื้นหลังแถวคู่ */
+}
+
+tr:nth-child(odd) {
+    background-color: #f1f8e9; /* สีพื้นหลังแถวคี่ */
+}
+
+tr:hover {
+    background-color: #d6f5d6; /* สีพื้นหลังเมื่อ hover */
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+th {
+    font-weight: bold;
+    background-color: #4CAF50; /* สีพื้นหลังส่วนหัวตาราง */
+}
+
+table tbody td {
+    color: #333;
+    font-weight: 400;
+}
+
+tr:hover td {
+    color: #388e3c; /* สีของข้อความเมื่อ hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .form-container {
+        padding: 1.5rem;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+/* Buttons */
+.logout-button {
+    background-color: #f44336;
+    padding: 0.8rem;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Toast styling */
+.Toastify__toast {
+    border-radius: 8px;
+    background-color: #388e3c;
+    color: white;
+}
+
+.Toastify__toast--error {
+    background-color: #f44336;
+}
+
+.Toastify__toast--success {
+    background-color: #4CAF50;
+}

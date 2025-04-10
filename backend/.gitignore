@@ -1,0 +1,15 @@
+# Ignore node_modules folder
+node_modules/
+
+# Keep environment variables out of version control
+.env
+
+# Ignore sensitive files
+server.js
+cryptoUtils.js
+
+# Ignore Prisma migration lock file
+backend/prisma/migration_lock.toml
+
+# Ignore Prisma migrations
+backend/prisma/migrations/
